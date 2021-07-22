@@ -1,0 +1,17 @@
+ar_drplugin.form:
+  path: '/admin/config/arvancloud-purge-form'
+  defaults:
+    _title: 'Arvancloud Credentials'
+    _form: '\Drupal\ar_drplugin\Form\ArvanCloudForm'
+  requirements:
+    _permission: 'ArvanCloud'
+ar_drplugin.cache:
+  path: '/admin/config/arvancloud/purge'
+  defaults:
+    _title: 'Arvancloud Purge'
+    _controller: '\Drupal\ar_drplugin\Controller\ArvancloudController::purgeAll'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'ArvanCloud'
+    _csrf_token: 'TRUE'
