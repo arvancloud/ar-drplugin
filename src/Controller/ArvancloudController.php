@@ -72,17 +72,17 @@ class ArvancloudController extends ControllerBase
      */
     public function getCredentials() {
         // Get credentials from settings.
-        $cloudflareCredentials = Settings::get('arvancloud_credentials');
+        $arvanCloudCredentials = Settings::get('arvancloud_credentials');
         // Store credentials.
-        if (!empty($cloudflareCredentials)) {
-            $this->arPurgeSettings = $cloudflareCredentials;
-            return $cloudflareCredentials;
+        if (!empty($arvanCloudCredentials)) {
+            $this->arPurgeSettings = $arvanCloudCredentials;
+            return $arvanCloudCredentials;
         }
         return NULL;
     }
 
     /**
-     * Purge cloudflare cache.
+     * Purge ArvanCloud cache.
      *
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      *   Redirect back to the previous url.

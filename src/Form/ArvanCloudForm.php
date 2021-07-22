@@ -30,7 +30,7 @@ class ArvanCloudForm extends ConfigFormBase
     protected $logger;
 
     /**
-     * Cloudflare purge constructor.
+     * ArvanCloud purge constructor.
      *
      * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
      *   The factory for configuration objects.
@@ -150,9 +150,9 @@ class ArvanCloudForm extends ConfigFormBase
      *   Return the value
      */
     protected function isOverridden(string $name) {
-        $cloudflareCredentials = Settings::get('arvancloud_credentials');
-        if (!empty($cloudflareCredentials[$name])) {
-            return $cloudflareCredentials[$name];
+        $arvanCloudCredentials = Settings::get('arvancloud_credentials');
+        if (!empty($arvanCloudCredentials[$name])) {
+            return $arvanCloudCredentials[$name];
         }
         return FALSE;
     }

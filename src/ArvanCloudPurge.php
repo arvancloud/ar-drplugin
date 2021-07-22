@@ -11,10 +11,6 @@ class ArvanCloudPurge
     /**
      * Function to get response.
      *
-     * @param string $zoneId
-     *   CF zone ID.
-     * @param string $authorization
-     *   CF authorization.
      *
      * @return int
      *   Return code status.
@@ -43,7 +39,15 @@ class ArvanCloudPurge
         }
 
     }
-    public static function setStatus(string $domain,string $apiKey,string $status){
+
+    /**
+     * @param string $domain
+     * @param string $apiKey
+     * @param string $status
+     * @return int
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public static function setStatus(string $domain, string $apiKey, string $status){
         $url = "https://napi.arvancloud.com/cdn/4.0/domains/{$domain}/caching";
         $method = 'PATCH';
 
