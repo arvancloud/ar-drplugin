@@ -14,18 +14,18 @@ User API Token available in arvancloud panel
 * Clear a webpage cache after new post or change
 
 
-# INSTALLATION
+## INSTALLATION
 Install as any other contributed module.
 
-# REQUIREMENTS
+## REQUIREMENTS
 1- It only works with drupal sites use ArvanCloud CDN.
 2- You must have ArvanCloud API Token and Authorization.
 
-# CONFIGURATION
+## CONFIGURATION
 Where can I enter the ArvanCloud API Token and Config?
 Go to your-site/admin/config/arvancloud-purge-form
 
-# PERMISSIONS
+## PERMISSIONS
 Drupal admin can give permissions to any drupal role to purge cached resources
 from ArvanCloud.
 
