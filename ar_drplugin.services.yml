@@ -1,0 +1,5 @@
+services:
+  arvancloud.logger.channel.arvancloud:
+    class: Drupal\Core\Logger\LoggerChannelInterface
+    parent: logger.channel_base
+    arguments: ['arvancloud']
