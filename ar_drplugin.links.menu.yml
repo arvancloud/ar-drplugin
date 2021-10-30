@@ -1,0 +1,8 @@
+ar_drplugin.form:
+  route_name: ar_drplugin.form
+  parent: system.admin_config
+  title: 'arvancloud'
+ar_drplugin.cache:
+  route_name: ar_drplugin.cache
+  title: 'All Purge arvancloud'
+  parent: ar_drplugin.form

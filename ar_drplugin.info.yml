@@ -1,0 +1,7 @@
+name: 'ArvanCloud CDN Drupal Plugin'
+type: module
+description: 'Drupal Plugin to config and clear CDN Cache'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Development'
+configure: ar_drplugin.form
